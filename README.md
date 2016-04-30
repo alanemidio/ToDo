@@ -10,3 +10,7 @@ Os metodos implementados foram:
   api/todo - retorna toda a lista de atividades a realizar  
   api/todo/5 - retorna item com codigo = 5  
   api/todo?nome=medico - retorna item cujo nome seja medico  
+  
+### Testes
+Foram realizados testes e todos passaram com sucesso.
+
