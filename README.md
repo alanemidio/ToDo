@@ -6,7 +6,7 @@ Este projeto consiste em implementar uma API que contenha metodos de pesquisa a 
 Cada atividade possui 2 informações o codigo e sua descrição.
 
 ## Implementação
-Os metodos implementados foram:
+Os metodos implementados foram:  
   api/todo - retorna toda a lista de atividades a realizar  
   api/todo/5 - retorna item com codigo = 5  
   api/todo?nome=medico - retorna item cujo nome seja medico  
