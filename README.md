@@ -11,6 +11,6 @@ Os metodos implementados foram:
   api/todo/5 - retorna item com codigo = 5  
   api/todo?nome=medico - retorna item cujo nome seja medico  
   
-### Testes
+## Testes
 Foram realizados testes e todos passaram com sucesso.
 
