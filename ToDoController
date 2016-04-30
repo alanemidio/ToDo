@@ -36,14 +36,14 @@ Public Class ToDoController
         Me.lista.Add(item)
     End Sub
 
-    #' GET api/todo
+    ' GET api/todo
     'rertorna toda a lista Carregada
     Public Function GetValues() As IEnumerable(Of clToDo)
         Return lista
 
     End Function
 
-    #' GET api/todo/5
+    ' GET api/todo/5
     'retorna item cujo codigo seja igual ao informado
     Public Function GetValue(ByVal id As Integer) As clToDo
         'selecionar no array itens com codigo igual ao informado
@@ -60,7 +60,7 @@ Public Class ToDoController
         Return item
     End Function
 
-    #' GET api/todo?nome=xxxxxx
+    ' GET api/todo?nome=xxxxxx
     'retorna item cujo nome seja igual ao informado
     Public Function GetPorNome(nome As String) As IEnumerable(Of clToDo)
 
