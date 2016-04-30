@@ -1,6 +1,8 @@
 # To Do
 Projeto To Do - CESMAC
 
-Projeto con finalidade realizar atividades de saula de aula e avaliacao dos alunos.
+Projeto com finalidade realizar atividades de saula de aula e avaliacao dos alunos.
 
-Neste projeto deveria ser criado uma lista de atividades a serem realizadas "To Do"
+Este projeto consiste em implementar uma API que contenha metodos de pesquisa a uma lista de atividades a serem realiazadas "To Do"
+
+Cada atividade possui 2 informações o codigo e sua descrição.
