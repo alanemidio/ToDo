@@ -1,0 +1,102 @@
+Imports System.Net.Http
+Imports System.Net
+Imports System.Web.Http
+
+Public Class ToDoController
+    Inherits ApiController
+
+    Private lista As New List(Of clToDo)
+
+    Public Sub New()
+        'carga inicial os itens a fazer
+
+        Dim item As New clToDo
+        item.Codigo = 1
+        item.Nome = "Pagar conta GVT"
+        Me.lista.Add(item)
+
+        item = New clToDo
+        item.Codigo = 2
+        item.Nome = "Ir ao Medico"
+        Me.lista.Add(item)
+
+        item = New clToDo
+        item.Codigo = 3
+        item.Nome = "Receber clientes"
+        Me.lista.Add(item)
+
+        item = New clToDo
+        item.Codigo = 4
+        item.Nome = "Ir ao Dentista"
+        Me.lista.Add(item)
+
+        item = New clToDo
+        item.Codigo = 5
+        item.Nome = "Ligar Mamae"
+        Me.lista.Add(item)
+    End Sub
+
+    ' GET api/todo
+    'rertorna toda a lista Carregada
+    Public Function GetValues() As IEnumerable(Of clToDo)
+        Return lista
+
+    End Function
+
+    ' GET api/todo/5
+    'retorna item cujo codigo seja igual ao informado
+    Public Function GetValue(ByVal id As Integer) As clToDo
+        'selecionar no array itens com codigo igual ao informado
+        Dim item = Me.lista.FirstOrDefault(Function(p) p.Codigo = id)
+
+        If item Is Nothing Then
+            'caso nao exita na lista retorna item com codigo 0 e nome nao encontrado
+            item = New clToDo
+            item.Codigo = 0
+            item.Nome = "nao encontrato"
+        End If
+
+        'caso exita retorno o item
+        Return item
+    End Function
+
+    ' GET api/todo?nome=xxxxxx
+    'retorna item cujo nome seja igual ao informado
+    Public Function GetPorNome(nome As String) As IEnumerable(Of clToDo)
+
+        'busca no array itens cujo nome seja o mesmo que o informado
+        Return Me.lista.Where(Function(p) String.Equals(p.Nome, nome, StringComparison.OrdinalIgnoreCase))
+
+    End Function
+
+
+    ' POST api/todo
+    Public Function PostValue(<FromBody()> ByVal value As String) As clToDo
+        Dim lst As IEnumerable(Of clToDo) = Me.lista.Where(Function(p) String.Equals(p.Nome, value, StringComparison.OrdinalIgnoreCase))
+        If lst.Count > 0 Then
+            'caso exita na lista retorna item
+            Return lst
+        End If
+
+        'caso nao exita cria novo item com codigo e nome passado por parametro
+        Dim item As New clToDo
+        item.Codigo = Me.lista.Count + 1
+        item.Nome = value
+
+        'adiciona o item a lista
+        Me.lista.Add(item)
+
+        'retorna item como novo codigo
+        Return item
+    End Function
+
+    ' PUT api/todo/5
+    Public Sub PutValue(ByVal id As Integer, <FromBody()> ByVal value As String)
+
+    End Sub
+
+    ' DELETE api/todo/5
+    Public Sub DeleteValue(ByVal id As Integer)
+
+    End Sub
+End Class
