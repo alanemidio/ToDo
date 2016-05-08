@@ -1,5 +1,5 @@
-# To Do
-Projeto To Do - CESMAC   
+# To Do List
+Projeto To Do List - Pós graduação de engenharia de software CESMAC   
 Projeto com finalidade realizar atividades de saula de aula e avaliacao dos alunos.
 
 Este projeto consiste em implementar uma API que contenha metodos de pesquisa a uma lista de atividades a serem realiazadas "To Do"  
@@ -9,7 +9,7 @@ Cada atividade possui 2 informações o codigo e sua descrição.
 Os metodos implementados foram:  
   api/todo - retorna toda a lista de atividades a realizar  
   api/todo/5 - retorna item com codigo = 5  
-  api/todo?nome=medico - retorna item cujo nome seja medico  
+  api/todo?nome=medico - retorna item cujo nome seja medico onde este representa uma consulta médica  
   
 ## Testes
 Foram realizados testes e todos passaram com sucesso.
