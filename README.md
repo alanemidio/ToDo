@@ -1,9 +1,7 @@
 # To Do List
 ###Projeto To Do List - Pós graduação de engenharia de software CESMAC   
-Projeto com finalidade realizar atividades de saula de aula e avaliacao dos alunos.
 
-Este projeto consiste em implementar uma API que contenha metodos de pesquisa a uma lista de atividades a serem realiazadas "To Do"  
-Cada atividade possui 2 informações o codigo e sua descrição.
+Este projeto consiste em implementar uma API que gerencie uma lista de atividade para serem realizadas "To Do". Esta API deverá conter as funcionalidades (consultas a lista de atividades a serem realizadas, consultar, incluir ou excluir uma nova atividade). Cada atividade possui 2 informações o codigo e sua descrição. O projeto tambem servirá como atividades de saula de aula e avaliacao dos alunos na matéria topicos avancados de Engenharia de Software ministrada pelo professor Daniel Fireman.
 
 ## Implementação
 Os metodos implementados foram:  
