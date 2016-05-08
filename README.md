@@ -7,6 +7,8 @@ Este projeto consiste em implementar uma API que gerencie uma lista de atividade
 ###Lista de funcionalidades
 *Listar
 >Este metodo lista todas as atividades presentes na lista  
+
+
 ## Implementação
 Os metodos implementados foram:  
   api/todo - retorna toda a lista de atividades a realizar  
