@@ -22,6 +22,10 @@ Para acessar: [http://localhost:3890/api/todo?nome=Medico](http://localhost:3890
 Para implementar a api, sera necessario um servidor IIS com framework .Net 4.0.
 O arquivo **www.rar** possui todos os arquivos necessarios para instalação, sendo necessario apensa criar a aplicação no servisor IIS e apontar o caminha sa pasta onde foi descompactado o arquivo.
   
+## Informações do codigo fonte
+O codigo fonte estao em dois arquivos **clToDo** e **ToDoControler** onde o arquivo clTodo é o arquivo da classe e o arquivo ToDoControler o arquivo contendo o codigo dos metodos implementados.
+
+
 ## Testes
 Foram realizados testes e todos passaram com sucesso.
 
