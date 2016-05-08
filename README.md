@@ -27,5 +27,6 @@ O codigo fonte estao em dois arquivos **clToDo** e **ToDoControler** onde o arqu
 
 
 ## Testes
-Foram realizados testes e todos passaram com sucesso.
+Foram realizados testes e todos passaram com sucesso. 
+Durante os testes foram capturadas as telas de retorno e amazenadas em imagens. Por não ter estar imagens em um servidor web não pude anexa-la a este documento mas foi criada uma pasta Teste e dentro desta pasta armazenadas as imagens capturadas.
 
