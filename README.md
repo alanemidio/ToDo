@@ -7,7 +7,11 @@ Este projeto consiste em implementar uma API que gerencie uma lista de atividade
 ###Lista de funcionalidades
 ####- Listar
 >Este metodo retorna a lista de todas as atividades cadastradas.  
-Para acessar: [http://localhost:3890/api/todo](http://localhost:3890/api/todo)
+Para acessar: [http://localhost:3890/api/todo](http://localhost:3890/api/todo)  
+
+####- Consultar pelo Codigo
+>Este metodo realisa uma consulta na lista a partir do codigo da atividade. Este código é passado como parametro para busca.  
+Para acessar: [http://localhost:3890/api/todo/5](http://localhost:3890/api/todo/5)
 
 
 ## Implementação
