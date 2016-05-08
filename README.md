@@ -5,7 +5,7 @@ Este projeto consiste em implementar uma API que gerencie uma lista de atividade
 
 ## Informações da API e suas funcionalidades  
 ###Lista de funcionalidades
-*Listar
+####- Listar
 >Este metodo lista todas as atividades presentes na lista  
 
 
