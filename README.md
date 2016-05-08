@@ -15,11 +15,11 @@ Para acessar: [http://localhost:3890/api/todo/5](http://localhost:3890/api/todo/
 
 ####- Consultar pelo Nome
 >Este metodo realisa uma consulta na lista a partir do nome da atividade. Este nome é passado como parametro para busca.  
-Para acessar: [http://localhost:3890/api/todo?nome=Medico](http://localhost:3890/api/todo/todo?nome=Medico)
+Para acessar: [http://localhost:3890/api/todo?nome=Medico](http://localhost:3890/api/todo?nome=Medico)
 
 ####- Incluir um novo Item
->Este metodo realisa a inclusao de uma nova atividade a lista. Para isso o nome da nova atividade é passado como parametro.  
-Para acessar: [http://localhost:3890/api/add?nome=NOME DA TAREFA](http://localhost:3890/api/todo/api/add?nome=NOME DA TAREFA)
+>Este metodo realisa a inclusao de uma nova atividade a lista. Para isso o nome da nova atividade é passado como parametro, antes de realisar a inclusao a api ira verificar se não existe uma atividade na lista com mesmo nome.  
+Para acessar: [http://localhost:3890/api/add?nome=nova](http://localhost:3890/api/add?nome=nova)
 
 
 ## Implementação
