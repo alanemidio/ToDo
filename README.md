@@ -19,10 +19,8 @@ Para acessar: [http://localhost:3890/api/todo?nome=Medico](http://localhost:3890
 
 
 ## Implementação
-Os metodos implementados foram:  
-  api/todo - retorna toda a lista de atividades a realizar  
-  api/todo/5 - retorna item com codigo = 5  
-  api/todo?nome=medico - retorna item cujo nome seja medico onde este representa uma consulta médica  
+Para implementar a api, sera necessario um servidor IIS com framework .Net 4.0.
+O arquivo **www.rar** possui todos os arquivos necessarios para instalação, sendo necessario apensa criar a aplicação no servisor IIS e apontar o caminha sa pasta onde foi descompactado o arquivo.
   
 ## Testes
 Foram realizados testes e todos passaram com sucesso.
