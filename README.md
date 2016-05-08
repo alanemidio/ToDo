@@ -19,8 +19,8 @@ Para acessar: [http://localhost:3890/api/todo?nome=Medico](http://localhost:3890
 
 
 ## Implementação
-Para implementar a api, sera necessario um servidor IIS com framework .Net 4.0.
-O arquivo **www.rar** possui todos os arquivos necessarios para instalação, sendo necessario apensa criar a aplicação no servisor IIS e apontar o caminha sa pasta onde foi descompactado o arquivo.
+Para implementar a api, sera necessario um servidor IIS com framework .Net 4.0 instalado no servidor.
+O arquivo **www.rar** possui todos os arquivos necessarios para instalação, sendo necessario descompactar este aquivo em um local no servidor. No servidor IIS criar uma nova aplicação com nome ToDo e apontar o caminho sa pasta onde foi descompactado o arquivo. Depis disto basta acessar o caminho: **http://seuservidor/todo/api/todo**
   
 ## Informações do codigo fonte
 O codigo fonte estao em dois arquivos **clToDo** e **ToDoControler** onde o arquivo clTodo é o arquivo da classe e o arquivo ToDoControler o arquivo contendo o codigo dos metodos implementados.
